@@ -44,14 +44,4 @@ else % there is a bulge
          while(a1>a2)
              a1=a1-2*pi;
          end
-         arc_length=(a2-a1)*R;
-     end 
-     % Subdivide the arc
-     np=ceil(arc_length/ds)+1;
-     for j=1:np-1 % exclude the last vertex
-         a=a1+(j-1)/(np-1)*(a2-a1);
-         X_IFS(end+1)=c(1)+R*cos(a);
-         Y_IFS(end+1)=c(2)+R*sin(a);
-     end
-end
-
+         arc_l
