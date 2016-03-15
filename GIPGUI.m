@@ -76,9 +76,11 @@ varargout{1} = handles.output;
 % --- Executes on button press in pushbutton1.
 function pushbutton1_Callback(hObject, eventdata, handles)
 [filename,pathname]=uigetfile({'*.txt;*.dxf';'*.*'},'Select DXF Input File');
-   alert(filename);
-if(isequal(filename,0))
- 
+
+if isequal(filename,0)
+   disp('User selected Cancel')
+else
+   disp(strcat(pathname,filename,' is loaded.'));
 end
 
 % hObject    handle to pushbutton1 (see GCBO)
