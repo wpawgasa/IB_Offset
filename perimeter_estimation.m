@@ -6,7 +6,7 @@
 % from this point. The end point of this DSS defines a new starting point.
 % The process is repeated till the whole contour has been visited. The DSS
 % end points form a polygonal line. The length of contour is defined as
-% Euclidean distance of this polygonal line
+% Euclidean distance of this polygonal line.
 
 ctr = 1;
 dx = Lx/n_grid_x;
